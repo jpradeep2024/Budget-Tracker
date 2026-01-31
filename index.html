@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="budget.png">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Budget Tracker</h1>
+
+    <!-- Add Transaction -->
+    <div class="form">
+        <input type="text" id="description" placeholder="Enter description">
+        <input type="number" id="amount" placeholder="Enter amount">
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <button onclick="addTransaction()">Add Transaction</button>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter">
+        <label>Filter:</label>
+        <select id="filter" onchange="renderTransactions()">
+            <option value="all">All</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+    </div>
+
+    <!-- Totals -->
+    <div class="summary">
+        <div class="card income-card">
+            <h3>Income</h3>
+            <p>₹<span id="totalIncome">0</span></p>
+        </div>
+        <div class="card expense-card">
+            <h3>Expense</h3>
+            <p>₹<span id="totalExpense">0</span></p>
+        </div>
+        <div class="card balance-card">
+            <h3>Balance</h3>
+            <p>₹<span id="balance">0</span></p>
+        </div>
+    </div>
+
+    <!-- Transactions -->
+    <h2>Transactions</h2>
+    <ul id="transactionList"></ul>
+    <h6>©2026pradeep.com</h6>
+
+    
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
