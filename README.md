@@ -13,7 +13,6 @@ It allows adding, deleting, filtering transactions and saves data using localSto
 - Persistent data using localStorage
 - Color-coded transactions
 - Filter transactions (All / Income / Expense)
-- Visual representation using pie chart
 
 ## Technologies Used
 - HTML
@@ -25,5 +24,5 @@ It allows adding, deleting, filtering transactions and saves data using localSto
 2. Open `index.html` in a web browser
 3. Start adding transactions
 
-## Author
-Student Project – Budget Tracker
+
+PRADEEP Project – Budget Tracker
